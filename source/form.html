@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body class="form__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img src="img/header_images/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy.">
-      <img src="img/header_images/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <div class="main-header__container">
+      <a class="main-header__logo" href="#">
+        <img src="img/header_images/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy.">
+        <img src="img/header_images/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+      </a>
+      <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-nav visually-hidden">
       <div class="main-nav__container">
         <ul class="main-nav__list" >
           <li class="main-nav__item main-nav__item--current">
-            <a href="#">Главная</a>
+            <a class="main-nav__item-link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a class="main-nav__item-link" href="#">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav__item-link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -72,8 +75,7 @@
           </div>
 
           <fieldset class="user-form__owners-contacts owners-contacts">
-            <legend class="visually-hidden">Контактные данные</legend>
-            <h2 class="owners-contacts__title">Контактные данные (владельца кота)</h2>
+            <legend class="owners-contacts__title">Контактные данные (владельца кота)</legend>
             <label class="owners-contacts__label">
               E-mail:*
               <input class="owners-contacts__parameter" type="text" placeholder="kuklachev@gmail.com">
@@ -85,16 +87,14 @@
           </fieldset>
 
           <fieldset class="user-form__сomment сomment">
-            <legend class="visually-hidden">Комментарий</legend>
-            <h2 class="сomment__title">Коментарий</h2>
+            <legend class="сomment__title">Комментарий</legend>
             <label class="сomment__label">
               <textarea class="сomment__parameter" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
 
           <fieldset class="user-form__additional-products additional-products">
-            <legend class="visually-hidden">Дополнительно</legend>
-            <h2 class="additional-products__title">Дополнительные продукты</h2>
+            <legend class="additional-products__title">Дополнительно</legend>
             <label class="additional-products__label">
               <input class="additional-products__parameter" type="checkbox" name="Sweetener" required>
               Сахарозаменитель
@@ -115,6 +115,20 @@
           <button class="button-order" type="submit">Отправить заявку</button>
           <p class="user-form__required-field">* — Обязательные поля</p>
         </form>
+      </div>
+    </section>
+    <section class="location">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <div class="location__container">
+        <div class="location-info">
+          <p class="location-info__employees">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <p class="location-info__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+        <img src="img/map/location.jpg" width="320" height="362" alt="Наше месторасположение">
       </div>
     </section>
   </main>

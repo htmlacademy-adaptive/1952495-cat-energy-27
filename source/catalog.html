@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body class="page-inner__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img src="img/header_images/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy.">
-      <img src="img/header_images/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <div class="main-header__container">
+      <a class="main-header__logo" href="#">
+        <img src="img/header_images/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy.">
+        <img src="img/header_images/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+      </a>
+      <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-nav visually-hidden">
       <div class="main-nav__container">
         <ul class="main-nav__list" >
           <li class="main-nav__item main-nav__item--current">
-            <a href="#">Главная</a>
+            <a class="main-nav__item-link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a class="main-nav__item-link" href="#">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav__item-link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -94,7 +97,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <img src="source/img/catalog/cat-energy-pro-fish-1000.jpg" alt="Cat Energy со вкусом рыбы 1000 грамм">
+            <img src="img/catalog/cat-energy-pro-fish-1000.jpg" alt="Cat Energy со вкусом рыбы 1000 грамм">
             <p class="catalog__item-title">
               Cat Energy PRO 1000 г
             </p>
@@ -151,7 +154,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <img src="source/img/catalog/cat-energy-pro-rise-500.jpg" alt="Cat Energy со вкусом риса 500 грамм">
+            <img src="img/catalog/cat-energy-pro-rise-500.jpg" alt="Cat Energy со вкусом риса 500 грамм">
             <p class="catalog__item-title">
               Cat Energy slim 500 г
             </p>
@@ -170,7 +173,7 @@
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <p class="catalog__item-show-more">+</p>
+            <img src="img/catalog/plus-show-more.svg" alt="Показать больше товаров.">
             <p class="catalog__item-title">
               Показать еще 100500 товаров
             </p>
@@ -185,44 +188,46 @@
 
     <section class="additional-products">
       <div class="additional-products__container">
-        <h2 class="additional-products__title">дополнительные товары</h2>
+        <h2 class="additional-products__title">Дополнительные товары</h2>
         <ul class="additional-products__list">
           <li class="additional-products__item products">
             <p class="products__title">Сахарозаменитель</p>
             <div class="products__parameter parameter">
-              <p class="parameter__weight">1 упаковка (100 г)</p>
-              <p class="parameter__price">200 Р</p>
+              <p class="parameter__order">1 упаковка (100 г)</p>
+              <p class="parameter__order">200 Р</p>
             </div>
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="additional-products__item products">
             <p class="products__title">Питьевая вода</p>
             <div class="products__parameter parameter">
-              <p class="parameter__weight">5 литров</p>
-              <p class="parameter__price">50 Р</p>
+              <p class="parameter__order">5 литров</p>
+              <p class="parameter__order">50 Р</p>
             </div>
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="additional-products__item products">
             <p class="products__title">Молоко</p>
             <div class="products__parameter parameter">
-              <p class="parameter__weight">1 литр</p>
-              <p class="parameter__price">100 Р</p>
+              <p class="parameter__order">1 литр</p>
+              <p class="parameter__order">100 Р</p>
             </div>
             <button class="button-order" type="button">Заказать</button>
           </li>
           <li class="additional-products__item products">
             <p class="products__title">Витамины</p>
             <div class="products__parameter parameter">
-              <p class="parameter__weight">1 упаковка (30 г)</p>
-              <p class="parameter__price">300 Р</p>
+              <p class="parameter__order">1 упаковка (30 г)</p>
+              <p class="parameter__order">300 Р</p>
             </div>
             <button class="button-order" type="button">Заказать</button>
           </li>
         </ul>
-        <div class="get-gift">
-          <p class="get-gift__description">Закажите все и получите чехол для кота в подарок!</p>
-        </div>
+        <section class="get-gift get-gift--overlay">
+          <div class="get-gift__container">
+            <p class="get-gift__description">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </section>
       </div>
     </section>
   </main>

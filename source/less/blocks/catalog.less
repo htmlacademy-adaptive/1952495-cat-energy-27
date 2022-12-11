@@ -1,0 +1,134 @@
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__item:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.catalog__item:last-child {
+  margin-bottom: 50px;
+}
+
+.catalog__item-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.parameter__title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.parameter__description {
+  .parameter__title;
+}
+
+.catalog__item-show-more {
+  font-size: 30px;
+}
+
+.catalog__item-description {
+  .parameter__description;
+}
+
+.button-order--show-all {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+.additional-products__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.additional-products__list {
+  .catalog__list;
+  margin-bottom: 54px;
+}
+
+.products__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.parameter__order {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  align-items: center;
+  color: #444444;
+}
+
+.get-gift {
+  background-image: url("../img/catalog/catalog-cat-decoration.jpg");
+  background-repeat: no-repeat;
+  width: 279px;
+  height: 289px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.get-gift__container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  background-image: url("../img/catalog/icon_gift.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.get-gift__description {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 182px;
+}

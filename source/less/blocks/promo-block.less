@@ -1,0 +1,37 @@
+.promo-block {
+  background-image: url("../img/promo_images/image-cat-decor.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 135px;
+  }
+}
+
+.promo-block__container {
+  z-index: 1;
+  position: relative;
+}
+
+.promo-block__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo-block__description {
+  .promo-block__title;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
