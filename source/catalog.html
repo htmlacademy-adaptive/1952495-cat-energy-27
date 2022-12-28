@@ -2,35 +2,44 @@
 <html class="page-inner" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body class="page-inner__body">
   <header class="main-header">
     <div class="main-header__container">
-      <a class="main-header__logo" href="#">
-        <img src="img/header_images/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy.">
-        <img src="img/header_images/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
-      </a>
-      <button class="main-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </div>
-    <nav class="main-nav visually-hidden">
-      <div class="main-nav__container">
-        <ul class="main-nav__list" >
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__item-link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Подбор программы</a>
-          </li>
-        </ul>
+      <div class="main-header__container-logo">
+        <a class="main-header__logo logo" href="#">
+          <img class="logo__image" src="img/header_images/logo-mobile-icon.svg" width="34" height="38"
+            alt="Логотип Cat Energy.">
+          <img class="logo__image-tablet" src="img/header_images/logo-tablet.svg" alt="Логотип Cat Energy.">
+          <img class="logo__image-desktop" src="img/header_images/logo-desktop.svg" alt="Логотип Cat Energy.">
+        </a>
+        <a class="main-header__logo-title logo-title" href="#">
+          <img class="logo__image" src="img/header_images/logo-mobile-text.svg" width="101" height="18"
+            alt="Cat Energy.">
+        </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__item-link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="catalog-main-container">
@@ -187,8 +196,8 @@
     </section>
 
     <section class="additional-products">
+      <h2 class="additional-products__title">Дополнительные товары</h2>
       <div class="additional-products__container">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
         <ul class="additional-products__list">
           <li class="additional-products__item products">
             <p class="products__title">Сахарозаменитель</p>
@@ -196,7 +205,7 @@
               <p class="parameter__order">1 упаковка (100 г)</p>
               <p class="parameter__order">200 Р</p>
             </div>
-            <button class="button-order" type="button">Заказать</button>
+            <button class="products__button-order" type="button">Заказать</button>
           </li>
           <li class="additional-products__item products">
             <p class="products__title">Питьевая вода</p>
@@ -204,7 +213,7 @@
               <p class="parameter__order">5 литров</p>
               <p class="parameter__order">50 Р</p>
             </div>
-            <button class="button-order" type="button">Заказать</button>
+            <button class="products__button-order" type="button">Заказать</button>
           </li>
           <li class="additional-products__item products">
             <p class="products__title">Молоко</p>
@@ -212,7 +221,7 @@
               <p class="parameter__order">1 литр</p>
               <p class="parameter__order">100 Р</p>
             </div>
-            <button class="button-order" type="button">Заказать</button>
+            <button class="products__button-order" type="button">Заказать</button>
           </li>
           <li class="additional-products__item products">
             <p class="products__title">Витамины</p>
@@ -220,7 +229,7 @@
               <p class="parameter__order">1 упаковка (30 г)</p>
               <p class="parameter__order">300 Р</p>
             </div>
-            <button class="button-order" type="button">Заказать</button>
+            <button class="products__button-order" type="button">Заказать</button>
           </li>
         </ul>
         <section class="get-gift get-gift--overlay">
@@ -228,6 +237,23 @@
             <p class="get-gift__description">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </section>
+      </div>
+    </section>
+
+    <section class="location">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <div class="location__container">
+        <div class="location-info">
+          <p class="location-info__employees">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <p class="location-info__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+        <img class="location-info__map" src="img/map/location.jpg" alt="Наше месторасположение.">
+        <img class="location-info__map-tablet" src="img/map/location-tablet.jpg" alt="Наше месторасположение.">
+        <img class="location-info__map-desktop" src="img/map/location-desktop.jpg" alt="Наше месторасположение.">
       </div>
     </section>
   </main>

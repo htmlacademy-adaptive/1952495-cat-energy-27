@@ -2,35 +2,44 @@
 <html class="form" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body class="form__body">
   <header class="main-header">
     <div class="main-header__container">
-      <a class="main-header__logo" href="#">
-        <img src="img/header_images/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy.">
-        <img src="img/header_images/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
-      </a>
-      <button class="main-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </div>
-    <nav class="main-nav visually-hidden">
-      <div class="main-nav__container">
-        <ul class="main-nav__list" >
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__item-link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Подбор программы</a>
-          </li>
-        </ul>
+      <div class="main-header__container-logo">
+        <a class="main-header__logo logo" href="#">
+          <img class="logo__image" src="img/header_images/logo-mobile-icon.svg" width="34" height="38"
+            alt="Логотип Cat Energy.">
+          <img class="logo__image-tablet" src="img/header_images/logo-tablet.svg" alt="Логотип Cat Energy.">
+          <img class="logo__image-desktop" src="img/header_images/logo-desktop.svg" alt="Логотип Cat Energy.">
+        </a>
+        <a class="main-header__logo-title logo-title" href="#">
+          <img class="logo__image" src="img/header_images/logo-mobile-text.svg" width="101" height="18"
+            alt="Cat Energy.">
+        </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__item-link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="form-main-container">
@@ -44,15 +53,15 @@
             <fieldset class="user-form__description-cat description-cat">
               <legend class="visually-hidden">Описание кота</legend>
               <label class="description-cat__label">
-                Имя:*
+                <span class="description-cat__title-input">Имя:*</span>
                 <input class="description-cat__parameter" type="text" placeholder="Барсик">
               </label>
               <label class="description-cat__label">
-                Вес (кг):*
+                <span class="description-cat__title-input">Вес (кг):*</span>
                 <input class="description-cat__parameter" type="text" placeholder="7">
               </label>
               <label class="description-cat__label">
-                Возраст (лет):*
+                <span class="description-cat__title-input">Возраст (лет):*</span>
                 <input class="description-cat__parameter" type="text" placeholder="7">
               </label>
             </fieldset>
@@ -60,15 +69,15 @@
             <fieldset class="user-form__choose-program choose-program">
               <legend class="visually-hidden">Выбор программы</legend>
               <label class="choose-program__label">
-                <input class="choose-program__parameter" type="checkbox" name="Weight loss" required>
+                <input class="choose-program__parameter" type="radio" name="Weight loss" required>
                 Похудение
               </label>
               <label class="choose-program__label">
-                <input class="choose-program__parameter" type="checkbox" name="Weight gain">
+                <input class="choose-program__parameter" type="radio" name="Weight gain">
                 Набор массы
               </label>
               <label class="choose-program__label">
-                <input class="choose-program__parameter" type="checkbox" name="Need advice">
+                <input class="choose-program__parameter" type="radio" name="Need advice">
                 Не знаю (нужен ваш совет)
               </label>
             </fieldset>
@@ -77,11 +86,11 @@
           <fieldset class="user-form__owners-contacts owners-contacts">
             <legend class="owners-contacts__title">Контактные данные (владельца кота)</legend>
             <label class="owners-contacts__label">
-              E-mail:*
+              <span class="owners-contacts__title-input">E-mail:*</span>
               <input class="owners-contacts__parameter" type="text" placeholder="kuklachev@gmail.com">
             </label>
             <label class="owners-contacts__label">
-              Телефон:*
+              <span class="owners-contacts__title-input">Телефон:*</span>
               <input class="owners-contacts__parameter" type="text" placeholder="8 (960) 900-60-90">
             </label>
           </fieldset>
@@ -93,30 +102,33 @@
             </label>
           </fieldset>
 
-          <fieldset class="user-form__additional-products additional-products">
-            <legend class="additional-products__title">Дополнительно</legend>
-            <label class="additional-products__label">
-              <input class="additional-products__parameter" type="checkbox" name="Sweetener" required>
+          <fieldset class="user-form__additional additional">
+            <legend class="additional__title">Дополнительно</legend>
+            <label class="additional__label">
+              <input class="additional__parameter" type="checkbox" name="Sweetener" required>
               Сахарозаменитель
             </label>
-            <label class="additional-products__label">
-              <input class="additional-products__parameter" type="checkbox" name="Water">
+            <label class="additional__label">
+              <input class="additional__parameter" type="checkbox" name="Water">
               Питьевая вода
             </label>
-            <label class="additional-products__label">
-              <input class="additional-products__parameter" type="checkbox" name="Milk">
+            <label class="additional__label">
+              <input class="additional__parameter" type="checkbox" name="Milk">
               Молоко
             </label>
-            <label class="additional-products__label">
-              <input class="additional-products__parameter" type="checkbox" name="Vitamins">
+            <label class="additional__label">
+              <input class="additional__parameter" type="checkbox" name="Vitamins">
               Витамины
             </label>
           </fieldset>
-          <button class="button-order" type="submit">Отправить заявку</button>
-          <p class="user-form__required-field">* — Обязательные поля</p>
-        </form>
+          <div class="send-request">
+            <button class="button-order" type="submit">Отправить заявку</button>
+            <p class="send-request__required-field">* — Обязательные поля</p>
+          </div>
+          </form>
       </div>
     </section>
+
     <section class="location">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="location__container">
@@ -128,7 +140,9 @@
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
-        <img src="img/map/location.jpg" width="320" height="362" alt="Наше месторасположение">
+        <img class="location-info__map" src="img/map/location.jpg" alt="Наше месторасположение.">
+        <img class="location-info__map-tablet" src="img/map/location-tablet.jpg" alt="Наше месторасположение.">
+        <img class="location-info__map-desktop" src="img/map/location-desktop.jpg" alt="Наше месторасположение.">
       </div>
     </section>
   </main>

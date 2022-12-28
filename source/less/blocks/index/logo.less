@@ -1,0 +1,32 @@
+.logo__image {
+  display: block;
+}
+
+.logo__image-tablet {
+  display: none;
+}
+
+.logo__image-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .logo__image {
+    display: none;
+  }
+
+  .logo__image-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop) {
+  .logo__image-tablet {
+    display: none;
+  }
+
+  .logo__image-desktop {
+    display: block;
+    margin: auto 0;
+  }
+}

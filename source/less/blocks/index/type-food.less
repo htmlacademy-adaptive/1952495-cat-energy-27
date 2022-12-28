@@ -1,6 +1,29 @@
+.type-food__container {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: calc(100% - 60px);
+  }
+
+  @media (min-width: @desktop) {
+    display: flex;
+    width: calc(100% - 220px);
+  }
+}
+
 .type-food__weight-loss {
   background-color: #f2f2f2;
   margin-bottom: 20px;
+  width: 100%;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 80px;
+  }
 }
 
 .type-food__title {

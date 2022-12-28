@@ -1,0 +1,55 @@
+.description-nutrition__title {
+  font-family: @oswald;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.description-nutrition__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.description-nutrition__item {
+  display: flex;
+
+  @media (min-width: @tablet) {
+    margin-right: 140px;
+    max-width: 250px;
+  }
+
+  @media (min-width: @tablet) {
+    margin-right: 80px;
+    max-width: 250px;
+  }
+}
+
+.description-nutrition__item:last-child {
+  margin-right: 0;
+}
+
+.description-nutrition__container {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet) {
+    width: calc(100% - 60px);
+  }
+
+  @media (min-width: @desktop) {
+    width: calc(100% - 220px);
+    margin-bottom: 69px;
+  }
+}

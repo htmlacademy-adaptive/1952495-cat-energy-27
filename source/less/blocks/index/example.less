@@ -1,0 +1,129 @@
+.example {
+  background-color: #eaeaea;
+  padding: 0 20px;
+  position: relative;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+    background-color: #ffffff;
+  }
+}
+
+.example__container {
+  @media (min-width: @desktop) {
+    background: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.example__container-description {
+  @media (min-width: @tablet) {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: @desktop) {
+    display: block;
+    height: 317px;
+    width: 436;
+    margin-bottom: 0;
+    padding: 75px 110px;
+  }
+}
+
+.example__title {
+  font-family: @oswald;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  padding-top: 25px;
+  margin: 0 30px;
+  margin-bottom: 40px;
+
+  @media (min-width: @desktop) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0;
+    margin: 0 0 76px 110px;
+  }
+}
+
+.example__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 1/3;
+  }
+
+  @media (min-width: @tablet) {
+    margin-bottom: 69px;
+  }
+}
+
+.example__number {
+  font-family: @oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.example__number-description {
+  font-size: 12px;
+  line-height: 100%;
+  color: #444444;
+  margin: 0 auto;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0;
+    margin-bottom: 55px;
+  }
+}
+
+.example__item:not(:last-child) {
+  @media (min-width: @tablet) {
+    margin-right: 42px;
+  }
+}
+
+.example__money {
+  font-family: @oswald;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop) {
+    text-align: left;
+  }
+}
