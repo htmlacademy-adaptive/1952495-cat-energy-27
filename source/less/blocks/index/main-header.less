@@ -26,6 +26,15 @@
   }
 }
 
+.main-header--without-background{
+  background-image: none;
+  height: auto;
+  background: none;
+  &::after{
+    background: none;
+  }
+}
+
 .main-header__container {
   width: calc(100% - 40px);
   margin: 0 auto;
