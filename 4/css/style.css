@@ -67,6 +67,13 @@ body {
     right: 0;
   }
 }
+.main-header--without-background {
+  background-image: none;
+  height: auto;
+}
+.main-header--without-background::after {
+  background: none;
+}
 .main-header__container {
   width: calc(100% - 40px);
   margin: 0 auto;
@@ -171,6 +178,9 @@ body {
     color: #ffffff;
     padding: 10px 0 10px 0;
   }
+}
+.item-link--change-color {
+  color: #000000;
 }
 .main-nav__item {
   border-top: 1px solid #e6e6e6;
@@ -968,7 +978,7 @@ body {
   color: #000000;
   margin: 0 20px 36px 20px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   .additional-products__title {
     margin: 0 30px 80px 30px;
   }
