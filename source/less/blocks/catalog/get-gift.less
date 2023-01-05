@@ -1,0 +1,82 @@
+.get-gift {
+  background-image: url("../img/catalog/catalog-cat-decoration.jpg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 289px;
+  position: relative;
+  margin: 0 auto;
+
+
+  @media (min-width: @tablet) {
+    background-image: url("../img/catalog/catalog-cat-decoration-tablet.jpg");
+    width: 100%;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop) {
+    background-image: url("../img/catalog/catalog-cat-decoration.jpg");
+    width: 245px;
+    height: 289px;
+    margin: auto 0;
+  }
+
+  &::after {
+    content: "";
+    background: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.get-gift__container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  background-image: url("../img/catalog/icon_gift.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+
+  @media (min-width: @tablet) and (max-width: @desktop) {
+    background-position: 15% 50%;
+  }
+
+  @media (min-width: @desktop) {
+    background-position: 50% 25%;
+  }
+}
+
+.get-gift__description {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 182px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 161px;
+
+  // @media (min-width: @tablet) {
+  //   margin: 0;
+  //   top: 50%;
+  //   right: 124px;
+  // }
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  @media (min-width: @tablet) {
+    text-align: left;
+    top: 35%;
+    left: 60%;
+  }
+
+  @media (min-width: @desktop) {
+    text-align: center;
+    top: 60%;
+    left: 0;
+    right: 0;
+  }
+}

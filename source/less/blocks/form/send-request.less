@@ -1,0 +1,30 @@
+.send-request {
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 64px;
+  }
+
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: 1fr 84px 1fr;
+    row-gap: 64px;
+  }
+}
+
+.send-request__required-field {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  width: 60%;
+  margin: 21px auto 32px auto;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0;
+    grid-column: 3;
+  }
+}

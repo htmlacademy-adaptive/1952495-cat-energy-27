@@ -1,0 +1,87 @@
+.location__container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.location-info__employees {
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+
+  @media (min-width: @desktop) {
+    margin: 56px 87px 56px 80px;
+  }
+}
+
+.location-info__address {
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+
+  @media (min-width: @desktop) {
+    margin: 56px 60px 56px 0;
+  }
+}
+
+.location-info {
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet) {
+    padding: 56px 70px;
+  }
+
+  @media (min-width: @desktop) {
+    position: absolute;
+    align-items: center;
+    padding: 0;
+    width: 565px;
+    height: 198px;
+    background-color: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 110px;
+    margin: auto 0;
+  }
+}
+
+.location-info__map {
+  display: block;
+  width: 100%;
+}
+
+.location-info__map-tablet {
+  display: none;
+}
+
+.location-info__map-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .location-info__map {
+    display: none;
+  }
+
+  .location-info__map-tablet {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .location-info__map-tablet {
+    display: none;
+  }
+
+  .location-info__map-desktop {
+    display: block;
+    width: 100%;
+  }
+}
