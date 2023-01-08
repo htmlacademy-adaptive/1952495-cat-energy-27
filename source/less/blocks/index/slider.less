@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  padding-bottom: 40px;
 
   @media (min-width: @tablet) {
     background: linear-gradient(to top, #eaeaea 75%, transparent 10%);
@@ -52,20 +53,40 @@
 }
 
 .slider__button {
-  width: 4px;
+  min-width: 4px;
   height: auto;
   background: #666666;
   padding: 0;
   border: none;
   border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover {
+    background: #68b738;
+  }
+
+  &:hover::after {
+    border-color: #68b738;
+  }
+
+  &:active {
+    background: #5eaa2f;
+    opacity: 0.6;
+  }
+
+  &:active::after {
+    border-color: #5eaa2f;
+    opacity: 0.6;
+  }
 
   &::after {
     content: "";
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
+    right: -18px;
     bottom: 0;
     margin: auto;
     width: 40px;

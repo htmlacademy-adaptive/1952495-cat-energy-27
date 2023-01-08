@@ -1,7 +1,6 @@
 .main-header {
   background-color: #ffffff;
   margin: 0 auto;
-  margin-bottom: 50px;
   position: relative;
 
   @media (min-width: @desktop) {
@@ -38,26 +37,31 @@
 .main-header__container {
   width: calc(100% - 40px);
   margin: 0 auto;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet) {
+    width: calc(100% - 60px);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 64px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: @desktop) {
     width: calc(100% - 220px);
+    margin-bottom: 73px;
   }
 }
 
-.main-header__container-logo {
+.main-header__container-menu {
+  position: relative;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   margin-bottom: 17px;
 
   @media (min-width: @tablet) {
     display: block;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   @media (min-width: @desktop) {
@@ -68,26 +72,90 @@
 
 .main-header__logo {
   display: block;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
 }
 
 .main-header__logo-title {
   .main-header__logo;
-  margin: auto auto;
+  margin: 0 auto;
+  margin-top: 12px;
 }
 
 .main-header__toggle {
-  background-image: url("../img/header_images/burger.svg");
-  background-color: transparent;
-  border: none;
+  z-index: 2;
   display: block;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 18px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  border: none;
   padding: 0;
-  margin: auto 0 auto auto;
 
   @media (min-width: @tablet) {
     display: none;
   }
 }
+
+.main-header__toggle--closed::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-header__toggle--closed:active::before {
+  background-color: fade(#000000, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#000000, 30%),
+    0 16px 0 0 fade(#000000, 30%);
+}
+
+.main-header__toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+// .menu--opened .main-header__toggle {
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 19px;
+//     right: 0;
+//     width: 24px;
+//     height: 2px;
+//     background-color: #000000;
+//   }
+
+//   &::before {
+//     transform: rotate(45deg);
+//     box-shadow: none;
+//   }
+
+//   &::after {
+//     transform: rotate(-45deg);
+//   }
+// }

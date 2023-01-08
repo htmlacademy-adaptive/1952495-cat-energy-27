@@ -1,14 +1,5 @@
-.program-selection {
+.program-selection__container {
   margin: 0;
-  padding: 0 20px 0 20px;
-
-  @media (min-width: @tablet) {
-    padding: 0 68px 0 68px;
-  }
-
-  @media (min-width: @desktop) {
-    padding: 0 110px 0 110px;
-  }
 }
 
 .program-selection__title {
@@ -16,13 +7,33 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  margin-bottom: 37px;
+  padding: 27px 20px 37px 20px;
+  margin: 0;
+  position: relative;
 
-  @media (min-width: @tablet),
-    (min-width: @desktop) {
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ebebeb;
+  }
+
+  @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 54px;
+    padding: 0 0 54px 69px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 0 56px 110px;
   }
 }
 
@@ -32,12 +43,19 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  padding: 0 20px;
+  margin: 0;
   margin-bottom: 39px;
 
-  @media (min-width: @tablet),
-    (min-width: @desktop) {
+  @media (min-width: @tablet) {
+    margin: 0;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    text-align: left;
+    padding: 0 360px 66px 69px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 990px 66px 110px;
   }
 }

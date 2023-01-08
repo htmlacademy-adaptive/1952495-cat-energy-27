@@ -6,14 +6,37 @@
   border: none;
   box-sizing: border-box;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: fade(#ffffff, 30%);
+  }
 }
 
 .button-order--show-all {
+  font-family: @oswald;
   background-color: #f2f2f2;
   color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: fade(#444444, 30%);
+  }
 }

@@ -1,4 +1,6 @@
 .description-nutrition__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: @oswald;
   font-size: 36px;
   line-height: 40px;
@@ -7,6 +9,7 @@
   @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -16,27 +19,78 @@
   list-style-type: none;
 
   @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 137px;
+  }
+
+  @media (min-width: @desktop) {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
 .description-nutrition__item {
   display: flex;
+  margin-bottom: 20px;
+  position: relative;
 
   @media (min-width: @tablet) {
-    margin-right: 140px;
+    display: block;
+    margin: 0;
     max-width: 250px;
+    min-height: 280px;
   }
 
-  @media (min-width: @tablet) {
-    margin-right: 80px;
+  @media (min-width: @desktop) {
     max-width: 250px;
   }
 }
 
 .description-nutrition__item:last-child {
   margin-right: 0;
+}
+
+.description-nutrition__image {
+  margin-right: 20px;
+
+  @media (min-width: @tablet) {
+    margin: 40px 0 31px 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.description-nutrition__text {
+  margin: auto 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  z-index: 2;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+
+.description-nutrition__number {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+    font-family: @oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .description-nutrition__container {
@@ -46,6 +100,7 @@
 
   @media (min-width: @tablet) {
     width: calc(100% - 60px);
+    margin-bottom: 90px;
   }
 
   @media (min-width: @desktop) {

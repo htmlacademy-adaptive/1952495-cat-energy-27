@@ -1,0 +1,46 @@
+.line-container {
+  position: relative;
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 25%;
+    left: 0;
+    background-color: #68b738;
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet) {
+    &::after {
+      top: 20%;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.line-container__title {
+  font-family: @oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  display: inline-block;
+  margin: 0;
+  padding: 0 21px 36px 20px;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 30px;
+    padding: 0 42px 76px 39px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 35px 76px 40px;
+    margin-left: 70px;
+  }
+}

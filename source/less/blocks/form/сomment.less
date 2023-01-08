@@ -1,4 +1,4 @@
-.сomment__title {
+.comment__title {
   font-family: @oswald;
   font-size: 24px;
   line-height: 26px;
@@ -6,8 +6,49 @@
   margin-bottom: 34px;
 }
 
-.сomment__parameter {
+.comment__label {
+  display: block;
+  padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    padding: 0 69px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 110px;
+  }
+}
+
+.comment__parameter {
   box-sizing: border-box;
+  border: 1px solid #e7e7e7;
   width: 100%;
   height: 150px;
+  padding: 9px 7px 0 7px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus-visible {
+    border-color: #444444;
+  }
+
+  @media (min-width: @tablet) {
+    height: 174px;
+    padding: 10px 0 0 19px;
+  }
+}
+
+.comment__parameter::placeholder {
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
