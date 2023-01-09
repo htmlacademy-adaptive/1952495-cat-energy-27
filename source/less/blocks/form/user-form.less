@@ -1,7 +1,7 @@
 .user-form__description-cat,
 .user-form__choose-program,
 .user-form__owners-contacts,
-.user-form__сomment,
+.user-form__comment,
 .user-form__additional {
   border: none;
   padding: 0;
@@ -10,10 +10,12 @@
 
 .user-form__description-cat,
 .user-form__choose-program {
-  margin-bottom: 46px;
+  padding: 0 20px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet) {
-    margin-bottom: 72px;
+    padding: 0;
+    margin-bottom: 75px;
   }
 
   @media (min-width: @desktop) {
@@ -22,36 +24,73 @@
 }
 
 .user-form__choose-program {
+  padding: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ebebeb;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ebebeb;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 25px 0 25px 28px;
+    border: 1px solid #e7e7e7;
+
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
   @media (min-width: @desktop) {
     margin: auto 0;
   }
 }
 
 .user-form__owners-contacts,
-.user-form__сomment {
+.user-form__comment {
   margin-bottom: 22px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 65px;
+  }
 }
 
 .user-form__additional {
   margin-bottom: 34px;
 
-  @media (min-width: @tablet) and (max-width: @desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 32px;
-    margin-bottom: 54px;
-  }
-
-  @media (min-width: @desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-bottom: 54px;
+  @media (min-width: @tablet) {
+    margin: 0;
   }
 }
 
 .user-form__container-description-cat {
+  @media (min-width: @tablet) {
+    padding: 0 69px;
+  }
+
   @media (min-width: @desktop) {
+    padding: 0 110px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -59,11 +98,21 @@
   }
 }
 
-.user-form__owners-contacts {
-  @media (min-width: @desktop) {
+.user-form__send-request {
+  padding: 0 20px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet) {
+    padding: 0 69px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    margin-bottom: 70px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 69px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 82px;
   }
 }

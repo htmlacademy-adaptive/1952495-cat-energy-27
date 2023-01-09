@@ -1,3 +1,37 @@
 .copyright__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet) {
+    justify-content: end;
+    padding: 0;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+
+  @media (min-width: @tablet) {
+    margin-right: 28px;
+  }
+}
+
+.copyright__image {
+  fill: #666666;
+}
+
+.copyright__link:hover > .copyright__image,
+.copyright__link:focus > .copyright__image {
+  fill: #68b738;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }

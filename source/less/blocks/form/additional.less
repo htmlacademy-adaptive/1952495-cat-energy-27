@@ -1,30 +1,35 @@
-.additional__title {
-  font-family: @oswald;
-  font-size: 24px;
-  line-height: 26px;
-  color: #000000;
-  margin-bottom: 34px;
-}
+.additional__container {
+  padding: 0 20px;
 
-.additional__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  margin-bottom: 54px;
+  @media (min-width: @tablet) {
+    padding: 0 69px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 123px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 61px;
+  }
 }
 
 .additional__label {
   display: block;
-  font-family: @oswald;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #222222;
   margin-bottom: 12px;
+  position: relative;
+  padding: 6px 0 6px 46px;
 
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
+    padding: 5px 0 5px 60px;
     margin-bottom: 0;
   }
 
@@ -37,4 +42,53 @@
 
 .additional__label:last-child {
   margin-bottom: 0;
+}
+
+.additional__mark {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: auto;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.additional__parameter:checked + .additional__mark::before,
+.additional__parameter:checked + .additional__mark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto auto;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+}
+
+.additional__title {
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.additional__parameter:disabled + .additional__label {
+  opacity: 0.3;
 }

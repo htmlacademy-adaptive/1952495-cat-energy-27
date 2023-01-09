@@ -12,6 +12,11 @@
   color: #000000;
   margin: 0;
 
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
   @media (min-width: @desktop) {
     margin: 56px 87px 56px 80px;
   }
@@ -22,6 +27,12 @@
   line-height: 20px;
   color: #444444;
   margin: 0;
+
+  @media (min-width: @tablet) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   @media (min-width: @desktop) {
     margin: 56px 60px 56px 0;
@@ -83,5 +94,13 @@
   .location-info__map-desktop {
     display: block;
     width: 100%;
+  }
+}
+
+.location-info--change-color {
+  background-color: #f2f2f2;
+
+  @media (min-width: @desktop) {
+    background-color: #ffffff;
   }
 }
