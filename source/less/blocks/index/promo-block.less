@@ -2,12 +2,16 @@
   background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 65%, transparent 0%), url("../img/promo_images/image-cat-decor.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 320px auto;
   position: relative;
   z-index: 1;
   width: 320px;
   margin: 0 auto;
   margin-bottom: 20px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 65%, transparent 0%), url("../img/promo_images/image-cat-decor@2x.jpg");
+  }
   // &::after {
   //   content: "";
   //   background: rgba(104, 183, 56, 0.85);
@@ -83,34 +87,16 @@
 .promo-block__image {
   display: block;
   margin: 0 auto;
-}
 
-.promo-block__image-tablet {
-  display: none;
-}
-
-.promo-block__image-desktop {
-  display: none;
-}
-
-@media (min-width: @tablet) {
-  .promo-block__image {
-    display: none;
+  @media (min-width: @tablet) {
+    width: 709px;
+    height: 609px;
   }
 
-  .promo-block__image-tablet {
+  @media (min-width: @desktop) {
     display: block;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop) {
-  .promo-block__image-tablet {
-    display: none;
-  }
-
-  .promo-block__image-desktop {
-    display: block;
+    width: 552px;
+    height: 499px;
     position: absolute;
     top: 0;
     bottom: 0;

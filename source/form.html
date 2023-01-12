@@ -11,10 +11,11 @@
     <div class="main-header__container">
       <div class="main-header__container-menu">
         <a class="main-header__logo logo" href="#">
-          <img class="logo__image" src="img/header_images/logo-mobile-icon.svg" width="34" height="38"
-            alt="Логотип Cat Energy.">
-          <img class="logo__image-tablet" src="img/header_images/logo-tablet.svg" alt="Логотип Cat Energy.">
-          <img class="logo__image-desktop" src="img/header_images/logo-desktop.svg" alt="Логотип Cat Energy.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header_images/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header_images/logo-tablet.svg">
+            <img class="logo__image" src="img/header_images/logo-mobile-icon.svg" width="34" height="38">
+          </picture>
         </a>
         <a class="main-header__logo-title logo-title" href="#">
           <img class="logo__image" src="img/header_images/logo-mobile-text.svg" width="101" height="18"
@@ -163,9 +164,11 @@
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
-        <img class="location-info__map" src="img/map/location.jpg" alt="Наше месторасположение.">
-        <img class="location-info__map-tablet" src="img/map/location-tablet.jpg" alt="Наше месторасположение.">
-        <img class="location-info__map-desktop" src="img/map/location-desktop.jpg" alt="Наше месторасположение.">
+        <picture>
+          <source media="(min-width: 1440x)" srcset="img/map/location-desktop.jpg 1x, img/map/location-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map/location-tablet.jpg 1x, img/map/location-tablet@2x.jpg 2x">
+          <img class="location-info__map" src="img/map/location.jpg" srcset="img/map/location@2x.jpg 2x" alt="Наше месторасположение.">
+        </picture>
       </div>
     </section>
   </main>
