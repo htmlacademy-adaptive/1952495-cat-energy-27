@@ -1,31 +1,12 @@
 .logo__image {
-  display: block;
-}
-
-.logo__image-tablet {
-  display: none;
-}
-
-.logo__image-desktop {
-  display: none;
-}
-
-@media (min-width: @tablet) {
-  .logo__image {
-    display: none;
+  @media (min-width: @tablet) {
+    width: 174px;
+    height: 51.68px;
   }
 
-  .logo__image-tablet {
-    display: block;
-  }
-}
-
-@media (min-width: @desktop) {
-  .logo__image-tablet {
-    display: none;
-  }
-
-  .logo__image-desktop {
+  @media (min-width: @desktop) {
+    width: 202px;
+    height: 59px;
     display: block;
     margin: auto 0;
 
@@ -36,5 +17,11 @@
     &:active {
       opacity: 0.6;
     }
+  }
+}
+
+.logo-title {
+  @media (min-width: @tablet) {
+    display: none;
   }
 }

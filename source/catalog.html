@@ -11,10 +11,11 @@
     <div class="main-header__container">
       <div class="main-header__container-menu">
         <a class="main-header__logo logo" href="#">
-          <img class="logo__image" src="img/header_images/logo-mobile-icon.svg" width="34" height="38"
-            alt="Логотип Cat Energy.">
-          <img class="logo__image-tablet" src="img/header_images/logo-tablet.svg" alt="Логотип Cat Energy.">
-          <img class="logo__image-desktop" src="img/header_images/logo-desktop.svg" alt="Логотип Cat Energy.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header_images/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header_images/logo-tablet.svg">
+            <img class="logo__image" src="img/header_images/logo-mobile-icon.svg" width="34" height="38">
+          </picture>
         </a>
         <a class="main-header__logo-title logo-title" href="#">
           <img class="logo__image" src="img/header_images/logo-mobile-text.svg" width="101" height="18"
@@ -50,7 +51,10 @@
         <ul class="catalog__list">
           <div class="catalog__item-container">
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/cat-energy-pro-chicken-500.jpg" alt="Cat Energy со вкусом курицы 500 грамм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/image1x/tablet/cat-energy-pro-chicken-500-tablet.png 1x, img/catalog/image2x/tablet/cat-energy-pro-chicken-500-tablet@2x.png 2x">
+              <img class="catalog__item-image" src="img/catalog/image1x/phone/cat-energy-pro-chicken-500.png" srcset="img/catalog/image2x/phone/cat-energy-pro-chicken-500@2x.png 2x" alt="Cat Energy со вкусом курицы 500 грамм">
+            </picture>
             <p class="catalog__item-title">
               Cat Energy PRO 500 г
             </p>
@@ -71,7 +75,10 @@
         </div>
         <div class="catalog__item-container">
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/cat-energy-pro-chicken-1000.jpg" alt="Cat Energy со вкусом курицы 1000 грамм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/image1x/tablet/cat-energy-pro-chicken-1000-tablet.png 1x, img/catalog/image2x/tablet/cat-energy-pro-chicken-1000-tablet@2x.png 2x">
+              <img class="catalog__item-image" src="img/catalog/image1x/phone/cat-energy-pro-chicken-1000.png" srcset="img/catalog/image2x/phone/cat-energy-pro-chicken-1000@2x.png 2x" alt="Cat Energy со вкусом курицы 1000 грамм">
+            </picture>
             <p class="catalog__item-title">
               Cat Energy PRO 1000 г
             </p>
@@ -92,7 +99,10 @@
         </div>
         <div class="catalog__item-container">
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/cat-energy-pro-fish-500.jpg" alt="Cat Energy со вкусом рыбы 500 грамм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/image1x/tablet/cat-energy-pro-fish-500-tablet.png 1x, img/catalog/image2x/tablet/cat-energy-pro-fish-500-tablet@2x.png 2x">
+              <img class="catalog__item-image" src="img/catalog/image1x/phone/cat-energy-pro-fish-500.png" srcset="img/catalog/image2x/phone/cat-energy-pro-fish-500@2x.png 2x" alt="Cat Energy со вкусом рыбы 500 грамм">
+            </picture>
             <p class="catalog__item-title">
               Cat Energy PRO 500 г
             </p>
@@ -113,7 +123,10 @@
         </div>
         <div class="catalog__item-container">
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/cat-energy-pro-fish-1000.jpg" alt="Cat Energy со вкусом рыбы 1000 грамм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/image1x/tablet/cat-energy-pro-fish-1000-tablet.png 1x, img/catalog/image2x/tablet/cat-energy-pro-fish-1000-tablet@2x.png 2x">
+              <img class="catalog__item-image" src="img/catalog/image1x/phone/cat-energy-pro-fish-1000.png" srcset="img/catalog/image2x/phone/cat-energy-pro-fish-1000@2x.png 2x" alt="Cat Energy со вкусом рыбы 1000 грамм">
+            </picture>
             <p class="catalog__item-title">
               Cat Energy PRO 1000 г
             </p>
@@ -134,7 +147,10 @@
         </div>
         <div class="catalog__item-container">
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/cat-energy-pro-buckwheat-500.jpg" alt="Cat Energy со вкусом гречки 500 грамм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/image1x/tablet/cat-energy-pro-buckwheat-500-tablet.png 1x, img/catalog/image2x/tablet/cat-energy-pro-buckwheat-500-tablet@2x.png 2x">
+              <img class="catalog__item-image" src="img/catalog/image1x/phone/cat-energy-pro-buckwheat-500.png" srcset="img/catalog/image2x/phone/cat-energy-pro-buckwheat-500@2x.png 2x" alt="Cat Energy со вкусом гречки 500 грамм">
+            </picture>
             <p class="catalog__item-title">
               Cat Energy slim 500 г
             </p>
@@ -155,7 +171,10 @@
         </div>
         <div class="catalog__item-container">
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/cat-energy-pro-buckwheat-1000.jpg" alt="Cat Energy со вкусом гречки 1000 грамм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/image1x/tablet/cat-energy-pro-buckwheat-1000-tablet.png 1x, img/catalog/image2x/tablet/cat-energy-pro-buckwheat-1000-tablet@2x.png 2x">
+              <img class="catalog__item-image" src="img/catalog/image1x/phone/cat-energy-pro-buckwheat-1000.png" srcset="img/catalog/image2x/phone/cat-energy-pro-buckwheat-1000@2x.png 2x" alt="Cat Energy со вкусом гречки 1000 грамм">
+            </picture>
             <p class="catalog__item-title">
               Cat Energy slim 500 г
             </p>
@@ -176,7 +195,10 @@
         </div>
         <div class="catalog__item-container">
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/cat-energy-pro-rise-500.jpg" alt="Cat Energy со вкусом риса 500 грамм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/image1x/tablet/cat-energy-pro-rise-500-tablet.png 1x, img/catalog/image2x/tablet/cat-energy-pro-rise-500-tablet@2x.png 2x">
+              <img class="catalog__item-image" src="img/catalog/image1x/phone/cat-energy-pro-rise-500.png" srcset="img/catalog/image2x/phone/cat-energy-pro-rise-500@2x.png 2x" alt="Cat Energy со вкусом риса 500 грамм">
+            </picture>
             <p class="catalog__item-title">
               Cat Energy slim 500 г
             </p>
@@ -269,9 +291,11 @@
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
-        <img class="location-info__map" src="img/map/location.jpg" alt="Наше месторасположение.">
-        <img class="location-info__map-tablet" src="img/map/location-tablet.jpg" alt="Наше месторасположение.">
-        <img class="location-info__map-desktop" src="img/map/location-desktop.jpg" alt="Наше месторасположение.">
+        <picture>
+          <source media="(min-width: 1440x)" srcset="img/map/location-desktop.jpg 1x, img/map/location-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map/location-tablet.jpg 1x, img/map/location-tablet@2x.jpg 2x">
+          <img class="location-info__map" src="img/map/location.jpg" srcset="img/map/location@2x.jpg 2x" alt="Наше месторасположение.">
+        </picture>
       </div>
     </section>
   </main>
