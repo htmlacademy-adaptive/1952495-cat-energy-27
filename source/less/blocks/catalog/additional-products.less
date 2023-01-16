@@ -5,14 +5,12 @@
   margin-bottom: 35px;
 
   @media (min-width: @tablet) {
-    padding: 0 36px;
     margin: 0;
     margin-bottom: 69px;
   }
 
   @media (min-width: @desktop) {
     margin: 0;
-    padding: 0;
   }
 }
 
@@ -21,18 +19,19 @@
   box-sizing: border-box;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
-  padding: 13px 0 19px 0;
+  margin-bottom: -1px;
+  padding: 13px 0 17px 0;
 
   @media (min-width: @tablet) and (max-width: @desktop) {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 26px 0 28px 0;
+    padding: 26px 38px 27px 38px;
   }
 
   @media (min-width: @desktop) {
     display: grid;
     grid-template-columns: 1.5fr 1.2fr 1fr;
-    padding: 15px 0 17px 0;
+    padding: 15px 0 15px 0;
   }
 }
 

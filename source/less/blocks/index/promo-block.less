@@ -1,5 +1,5 @@
 .promo-block__container {
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 65%, transparent 0%), url("../img/promo_images/image-cat-decor.jpg");
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 65%, transparent 0%), url("../img/promo_images/image-cat-decor.webp");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 320px auto;
@@ -10,7 +10,7 @@
   margin-bottom: 20px;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 65%, transparent 0%), url("../img/promo_images/image-cat-decor@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 65%, transparent 0%), url("../img/promo_images/image-cat-decor@2x.webp");
   }
   // &::after {
   //   content: "";
@@ -87,8 +87,10 @@
 .promo-block__image {
   display: block;
   margin: 0 auto;
+  margin-bottom: 3px;
 
   @media (min-width: @tablet) {
+    margin: 0;
     width: 709px;
     height: 609px;
   }
@@ -109,6 +111,7 @@
   display: block;
   width: calc(100% - 40px);
   margin: 0 auto;
+  height: 40px;
 
   @media (min-width: @tablet) {
     font-size: 20px;
