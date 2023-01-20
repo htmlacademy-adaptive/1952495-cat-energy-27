@@ -10,8 +10,8 @@
   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/favicons/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="source/fonts/oswald/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -22,7 +22,7 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/header_images/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/header_images/logo-tablet.svg">
-            <img class="logo__image" src="img/header_images/logo-mobile-icon.svg" width="34" height="38">
+            <img class="logo__image" src="img/header_images/logo-mobile-icon.svg" width="34" height="38" alt="Логотип Cat Energy">
           </picture>
         </a>
         <a class="main-header__logo-title logo-title" href="#">
@@ -172,8 +172,8 @@
             <img class="slider__image-cat-before" src="img/slider/left-cat.png" srcset="img/slider/left-cat@2x.png 2x" width="140" height="256" alt="До похудения.">
           </picture>
           <button class="slider__button button-slider-cat" type="button">
-            <div class="button-slider-cat__left-triangle"></div>
-            <div class="button-slider-cat__right-triangle"></div>
+            <span class="button-slider-cat__left-triangle"></span>
+            <span class="button-slider-cat__right-triangle"></span>
           </button>
           <picture>
             <source media="(min-width: 768px)" srcset="img/slider/right-cat-tablet.png 1x, img/slider/right-cat-tablet@2x.png 2x">
