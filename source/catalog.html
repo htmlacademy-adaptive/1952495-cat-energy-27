@@ -23,7 +23,7 @@
           <img class="logo-title__image" src="img/header_images/logo-mobile-text.svg" width="101" height="18"
             alt="Cat Energy.">
         </a>
-        <button class="main-header__toggle main-header__toggle--closed" type="button">
+        <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -31,13 +31,13 @@
         <div class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link--change-color" href="#">Главная</a>
+              <a class="main-nav__item-link main-nav__item-link--change-color" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link main-nav__item-link--current-change main-nav__item-link--change-color" href="#">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link--change-color" href="#">Подбор программы</a>
+              <a class="main-nav__item-link main-nav__item-link--change-color" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -253,7 +253,7 @@
     </section>
 
     <section class="additional-products">
-      <div class="line-container">
+      <div class="line-container line-container--reset">
         <h2 class="line-container__title">Дополнительные товары</h2>
       </div>
       <div class="additional-products__container">
@@ -326,21 +326,24 @@
       <div class="main-footer__social-container">
         <ul class="main-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Группа в вконтакте</span>
               <svg class="social__image" width="28" height="22">
                 <use href="img/sprite.svg#social-icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+              <span class="visually-hidden">Ютюб канал</span>
               <svg class="social__image" width="28" height="22">
                 <use href="img/sprite.svg#social-icon-youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
+            <a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy">
+              <span class="visually-hidden">Телеграм канал</span>
               <svg class="social__image" width="28" height="22">
                 <use href="img/sprite.svg#social-icon-telegram"></use>
               </svg>
@@ -351,7 +354,7 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
-                    <svg class="copyright__image" width="27" height="34">
+          <svg class="copyright__image" width="27" height="34">
             <use href="img/sprite.svg#icon-html-academy"></use>
           </svg>
         </a>

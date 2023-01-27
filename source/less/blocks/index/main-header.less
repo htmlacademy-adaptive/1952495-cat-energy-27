@@ -4,39 +4,23 @@
   position: relative;
 
   @media (min-width: @desktop) {
-    background-image: url("../img/promo_images/image-cat-decor-desktop.jpg");
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, transparent 0%), url("../img/promo_images/image-cat-decor-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 720px auto;
+    background-size: 50% auto;
     width: 100%;
-    height: 694px;
+    min-height: 694px;
     margin-bottom: 75px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo_images/image-cat-decor-desktop@2x.jpg");
-    }
-
-    &::after {
-      content: "";
-      background: rgba(104, 183, 56, 0.85);
-      position: absolute;
-      width: 50%;
-      height: 100%;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      right: 0;
+      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, transparent 0%), url("../img/promo_images/image-cat-decor-desktop@2x.jpg");
     }
   }
 }
 
 .main-header--without-background {
+  min-height: auto;
   background-image: none;
-  height: auto;
-
-  &::after {
-    background: none;
-  }
 }
 
 .main-header__container {
@@ -53,6 +37,7 @@
 
   @media (min-width: @desktop) {
     width: calc(100% - 220px);
+    margin-bottom: 28px;
   }
 }
 
@@ -139,6 +124,10 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-header__toggle--nojs {
+  display: none;
 }
 
 // .menu--opened .main-header__toggle {

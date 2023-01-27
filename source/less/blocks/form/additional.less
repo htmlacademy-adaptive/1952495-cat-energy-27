@@ -8,6 +8,7 @@
     grid-template-rows: 1fr 1fr;
     row-gap: 32px;
     column-gap: 123px;
+    margin-top: -22px;
     margin-bottom: 54px;
   }
 
@@ -79,6 +80,7 @@
 
 .additional__title {
   font-family: @oswald;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -88,6 +90,14 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.additional__parameter:hover + .additional__mark {
+  border-color: #bababa;
+}
+
+.additional__parameter:focus-visible + .additional__mark {
+  border-color: #444444;
 }
 
 .additional__parameter:disabled + .additional__label {
