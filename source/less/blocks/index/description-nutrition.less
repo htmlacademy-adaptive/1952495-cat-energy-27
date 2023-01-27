@@ -2,6 +2,7 @@
   margin: 0;
   margin-bottom: 40px;
   font-family: @oswald;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
@@ -25,9 +26,8 @@
   }
 
   @media (min-width: @desktop) {
-    display: flex;
-    justify-content: space-between;
-    gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 76px;
   }
 }
 
@@ -82,6 +82,7 @@
   @media (min-width: @tablet) {
     display: block;
     font-family: @oswald;
+    font-weight: 400;
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;

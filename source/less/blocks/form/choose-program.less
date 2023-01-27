@@ -1,6 +1,7 @@
 .choose-program__label {
   display: block;
   font-family: @oswald;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -54,6 +55,14 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.choose-program__parameter:hover + .choose-program__mark {
+  border-color: #bababa;
+}
+
+.choose-program__parameter:focus-visible + .choose-program__mark {
+  border-color: #444444;
 }
 
 .choose-program__parameter:disabled + .choose-program__label {

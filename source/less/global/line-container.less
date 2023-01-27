@@ -1,6 +1,7 @@
 .line-container {
   position: relative;
   margin: 0;
+  padding-right: 80px;
 
   &::after {
     content: "";
@@ -9,6 +10,7 @@
     width: 100%;
     top: 25%;
     left: 0;
+    right: 0;
     background-color: #68b738;
     z-index: -1;
   }
@@ -24,6 +26,7 @@
 
 .line-container__title {
   font-family: @oswald;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
@@ -43,4 +46,8 @@
     padding: 0 35px 74px 40px;
     margin-left: 70px;
   }
+}
+
+.line-container--reset {
+  padding-right: 0;
 }

@@ -15,6 +15,7 @@
 
 .catalog__title {
   font-family: @oswald;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
@@ -124,7 +125,7 @@
   }
 }
 
-.catalog__item-container:nth-child(even) .catalog__item .catalog__item-image-container {
+.catalog__item:nth-child(even) .catalog__item-container .catalog__item-image-container {
   @media (min-width: @tablet) {
     top: -17%;
   }
@@ -199,6 +200,7 @@
 
 .catalog__item-title {
   font-family: @oswald;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -225,7 +227,8 @@
 
 .catalog__item-additional-image {
   display: block;
-  margin: 25px auto 23px auto;
+  margin: 4px auto 23px auto;
+  grid-column: 1/-1;
 
   @media (min-width: @tablet) {
     margin: 52px auto 49px auto;
@@ -236,7 +239,6 @@
 
 .catalog__item-additional-title {
   font-family: @oswald;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -245,6 +247,7 @@
   color: #111111;
   margin: 0;
   margin-bottom: 8px;
+  grid-column: 1/-1;
 
   @media (min-width: @tablet) {
     font-size: 20px;
@@ -262,6 +265,7 @@
   color: #444444;
   margin: 0;
   margin-bottom: 21px;
+  grid-column: 1/-1;
 
   @media (min-width: @tablet) {
     font-size: 16px;
